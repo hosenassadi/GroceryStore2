@@ -11,8 +11,6 @@ import pasta from './pasta.jpg';
 import tuna from './tuna.jpg';
 import rice from './rice.jpg';
 
-
-
 function App() {
   
   const [Cart, setCart] = useState([]);
