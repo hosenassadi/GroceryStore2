@@ -1,11 +1,116 @@
 .App {
   text-align: center;
+  padding: 20px;
+}
+
+.title{
+  color: blue;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add {
+  background-color: green;
+  width: 70px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.remove {
+  background-color: red;
+  width: 70px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: darkgreen;
+}
+
+.remove:hover {
+  background-color: darkred;
+}
+.buyButt:hover {
+  background-color: darkgreen;
+}
+.buyButt{
+  background-color: rgb(34, 230, 34);
+  color: white;
+  border-color: white ;
+  width: 90px;
+  border-radius: 30px;
+  height: 24px
+}
+
+.buyingProcess{
+  display: flex;
+  margin-left: 130px;
+}
+
+.list{
+  width: 100px;
+  padding-left: 40px;
+  font-weight: bold;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.marketCont{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.marketItem{
+  text-align: center;
+  border: 1px solid blue;
+  width: 170px;
+}
+
+.marketItem img{
+  width: 148px;
+  height: 100px;
+}
+
+
+.parent{
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 100px 100px 100px;
+  padding-bottom: 10px;
+}
+
+.parent div{
+  background-color: gold;
+
+}
+.secB{
+  width: 120px;
+  border-radius: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.marketItem{
+  padding-bottom: 7px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +118,3 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
